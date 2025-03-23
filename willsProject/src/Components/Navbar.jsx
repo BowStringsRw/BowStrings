@@ -4,8 +4,7 @@ import Day from "../assets/day.png"
 import Night from "../assets/night.png"
 
 
-const NavBar = () => {
-    const [theme,setTheme]=useState("light");
+const NavBar = ({theme, setTheme}) => {
     const [unwrap, setUnwrap]=useState(true);
     const [hamopen, setHamopen]= useState("open")
     function changeTheme(){

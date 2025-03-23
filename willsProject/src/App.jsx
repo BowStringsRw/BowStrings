@@ -8,7 +8,7 @@ function App() {
   return (
     <>
      <NavBar theme ={theme} setTheme={setTheme}/>
-     <Home/>
+     <Home theme={theme}/>
     </>
   )
 }

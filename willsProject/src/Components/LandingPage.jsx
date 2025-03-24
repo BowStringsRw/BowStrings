@@ -46,7 +46,7 @@ const Home = ({theme}) => {
             </div>
             {/* dotted img */}
             <div className="absolute top-50 left-200 "><img src={Dotted} alt="" className="scale-150 z-0" /></div>
-
+           
         </div>
 
      );

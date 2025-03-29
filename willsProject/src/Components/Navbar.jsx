@@ -5,8 +5,8 @@ import Night from "../assets/night.png"
 
 
 const NavBar = ({theme, setTheme}) => {
-    const [unwrap, setUnwrap]=useState(true);
-    const [hamopen, setHamopen]= useState("open")
+    const [unwrap, setUnwrap]=useState(false);
+    const [hamopen, setHamopen]= useState("close")
     function changeTheme(){
         theme == "light" ? setTheme("Dark") : setTheme("light")
     }

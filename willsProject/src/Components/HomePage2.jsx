@@ -15,28 +15,28 @@ const Homepage2 = ({theme}) => {
      {/* the second page about opportunities */}
 
      <div className={theme == "light"? "mt-30 mx-20 pt-40" : "mt-0 px-20 pt-20 bg-[#161618]" }>
-               <div className="flex items-center justify-between gap-100">
+               <div className=" flex gap-7 flex-col md:flex items-center md:justify-between ">
                     <p className="text-blue-500 font-bold">Explore popular scholarships </p>
-                    <button className="text-white  text-sm font-bold py-1 px-3 bg-[#1A84FF] " >View all</button>
+                    <button className="text-white mb-3 text-sm font-bold py-1 px-3 bg-[#1A84FF] " >View all</button>
                </div>
-               {/* the card */}
-               <div className={theme == "light"? "flex justify-between" : "flex justify-between text-white" } >
+               {/* all cards */}
+               <div className={theme == "light"? "flex sm:flex-col items-center gap-8 md:flex-row md:justify-between" : "flex justify-between text-white" } >
                 {/* card one */}
-               <div data-aos="fade-right" className="w-1/4 my-4 shadow shadow-gray-400">
+               <div data-aos="fade-right" className=" w-3/4 md:w-1/4 my-4 shadow shadow-gray-400">
                 <img src={Pic1} alt="" />
                 <h2 className={theme == "light" ? "text-sm font-bold my-3 px-2" : "text-sm text-white font-bold my-3 px-2"} >Essay writing competition</h2>
                 <p className="text-sm font-light p-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste nobis cumque corrupti dicta neque cupiditate consectetur, veniam possimus aperiam expedita optio quo, excepturi iusto eius molestiae deleniti ea culpa at.</p>
                 <p className="text-blue-500 text0-sm font-light my-2 px-2">See more </p>
                </div>
                {/* card two */}
-               <div data-aos="fade-up" className="w-1/4 my-4 shadow shadow-gray-400">
+               <div data-aos="fade-up" className=" w-3/4 md:w-1/4 my-4 shadow shadow-gray-400">
                 <img src={Pic1} alt="" />
                 <h2 className="text-sm font-bold my-3 px-2">Essay writing competition</h2>
                 <p className="text-sm font-light p-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste nobis cumque corrupti dicta neque cupiditate consectetur, veniam possimus aperiam expedita optio quo, excepturi iusto eius molestiae deleniti ea culpa at.</p>
                 <p className="text-blue-500 text0-sm font-light my-2 px-2">See more </p>
                </div>
                {/* card three */}
-               <div data-aos="fade-left" className="w-1/4 my-4 shadow shadow-gray-400">
+               <div data-aos="fade-left" className=" w-3/4 md:w-1/4 my-4 shadow shadow-gray-400">
                 <img src={Pic1} alt="" />
                 <h2 className="text-sm font-bold my-3 px-2">Essay writing competition</h2>
                 <p className="text-sm font-light p-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste nobis cumque corrupti dicta neque cupiditate consectetur, veniam possimus aperiam expedita optio quo, excepturi iusto eius molestiae deleniti ea culpa at.</p>
@@ -64,11 +64,11 @@ const Homepage2 = ({theme}) => {
                     <p className="text-blue-500 font-bold ">Our Working process</p>
                     </div>            
                {/* the leaf Lady */}
-               <div className="my-10 flex justify-between">
+               <div className=" my-10 md:flex justify-between">
 
-                <div className={theme == "light"? "grid grid-cols-2 w-1/2 gap-10" : "grid grid-cols-2 w-1/2 gap-10 text-white"}>
+                <div className={theme == "light"? " md:grid grid-cols-2 w-1/2 gap-10" : "grid grid-cols-2 w-1/2 gap-10 text-white"}>
                     {/* icon 1 */}
-                    <div data-aos="fade-right" className="w-75 shadow shadow-gray-300 p-4">
+                    <div data-aos="fade-right" className=" translate-x-1/2 md:translate-0 w-75 shadow shadow-gray-300 md:p-4">
                         <div className="w-15 h-15 bg-[#F2FFF5] rounded-full mb-5 flex justify-center items-center">
                         <img src={Writer} alt="" className="w-10 h-10"/>
                         </div>
@@ -88,7 +88,7 @@ const Homepage2 = ({theme}) => {
 
                     </div>
                      {/* icon 1 */}
-                     <div data-aos="fade-up" className="w-75 shadow shadow-gray-300 p-4">
+                     <div data-aos="fade-up" className=" translate-x-1/3 md:translate-0 mt-15 md:m-0 w-75 shadow shadow-gray-300 p-4">
                         <div className="w-15 h-15 bg-[#F2FFF5] rounded-full mb-5 flex justify-center items-center">
                         <img src={Writer} alt="" className="w-10 h-10"/>
                         </div>
@@ -110,15 +110,15 @@ const Homepage2 = ({theme}) => {
                     
                 </div>
                 {/* real leaf lady */}
-                <div data-aos="fade-left">
-                    <img src={Leaflady} alt="" />
+                <div data-aos="fade-left" className="flex items-center justify-center">
+                    <img src={Leaflady} className="w-2/3  mt-16 md:mt-0 md:w-2/2" alt="" />
                 </div>
                </div>
                {/* the team intro */}
 
                <div className= {theme == "light"? "my-30" : "mt-30 text-white  pb-30"}>
-                <p className="font-bold my-3 text-2xl">MEET <br /><span className="text-blue-500">OUR TEAM</span></p>
-                <div className="flex justify-between">
+                <p className="font-bold my-3 md:text-2xl">MEET <br /><span className="text-blue-500">OUR TEAM</span></p>
+                <div className=" md:flex md:justify-between">
                     {/* person 1 */}
                     <div className={theme == "light" ? "flex items-center gap-9 w-90 shadow-2xl shadow-black rounded-full":"flex items-center gap-9 w-90 shadow-2xl shadow-black bg-gray-400 rounded-full"}>
                         <div className="bg-[#393D3E] w-40">
@@ -145,7 +145,7 @@ const Homepage2 = ({theme}) => {
 
                     {/* person 2 */}
                     {/* person 1 */}
-                    <div className={theme == "light" ? "flex items-center gap-9 w-90 shadow-2xl shadow-black rounded-full" : "flex items-center gap-9 w-90 shadow-2xl shadow-black bg-gray-400 rounded-full"}>
+                    <div className={theme == "light" ? "flex items-center gap-9 m-10 md:m-0 w-90 shadow-2xl shadow-black rounded-full" : "flex items-center gap-9 w-90 shadow-2xl shadow-black bg-gray-400 rounded-full"}>
                         <div className="bg-[#393D3E] w-40">
                             <img src={Profilepic} alt="" />
                         </div>
@@ -169,7 +169,7 @@ const Homepage2 = ({theme}) => {
                     </div>
                     {/* person 3 */}
                     {/* person 1 */}
-                    <div className={theme == "light" ? "flex items-center gap-9 w-90 shadow-2xl shadow-black rounded-full" : "flex items-center gap-9 w-90 shadow-2xl shadow-black bg-gray-400 rounded-full"}>
+                    <div className={theme == "light" ? "flex items-center gap-9  w-90 md:w-90 shadow-2xl shadow-black rounded-full" : "flex items-center gap-9 w-90 shadow-2xl shadow-black bg-gray-400 rounded-full"}>
                         <div className="bg-[#393D3E] w-40">
                             <img src={Profilepic} alt="" />
                         </div>

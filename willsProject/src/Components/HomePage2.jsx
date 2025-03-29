@@ -22,21 +22,21 @@ const Homepage2 = ({theme}) => {
                {/* the card */}
                <div className={theme == "light"? "flex justify-between" : "flex justify-between text-white" } >
                 {/* card one */}
-               <div className="w-1/4 my-4 shadow shadow-gray-400">
+               <div data-aos="fade-right" className="w-1/4 my-4 shadow shadow-gray-400">
                 <img src={Pic1} alt="" />
                 <h2 className={theme == "light" ? "text-sm font-bold my-3 px-2" : "text-sm text-white font-bold my-3 px-2"} >Essay writing competition</h2>
                 <p className="text-sm font-light p-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste nobis cumque corrupti dicta neque cupiditate consectetur, veniam possimus aperiam expedita optio quo, excepturi iusto eius molestiae deleniti ea culpa at.</p>
                 <p className="text-blue-500 text0-sm font-light my-2 px-2">See more </p>
                </div>
                {/* card two */}
-               <div className="w-1/4 my-4 shadow shadow-gray-400">
+               <div data-aos="fade-up" className="w-1/4 my-4 shadow shadow-gray-400">
                 <img src={Pic1} alt="" />
                 <h2 className="text-sm font-bold my-3 px-2">Essay writing competition</h2>
                 <p className="text-sm font-light p-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste nobis cumque corrupti dicta neque cupiditate consectetur, veniam possimus aperiam expedita optio quo, excepturi iusto eius molestiae deleniti ea culpa at.</p>
                 <p className="text-blue-500 text0-sm font-light my-2 px-2">See more </p>
                </div>
                {/* card three */}
-               <div className="w-1/4 my-4 shadow shadow-gray-400">
+               <div data-aos="fade-left" className="w-1/4 my-4 shadow shadow-gray-400">
                 <img src={Pic1} alt="" />
                 <h2 className="text-sm font-bold my-3 px-2">Essay writing competition</h2>
                 <p className="text-sm font-light p-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste nobis cumque corrupti dicta neque cupiditate consectetur, veniam possimus aperiam expedita optio quo, excepturi iusto eius molestiae deleniti ea culpa at.</p>
@@ -44,7 +44,7 @@ const Homepage2 = ({theme}) => {
                </div>
                </div>
                {/* the lady with books */}
-               <div className="flex justify-between items-center mt-10">
+               <div data-aos="fade-left" className="flex justify-between items-center mt-10">
                 <div className="relative w-1/2 ">
                 <img src={Kalisa} alt="" className="w-100 h-120 z-10"/>
                 <img src={Dotted} alt="" className="absolute bottom-0 w-30 -translate-x-1/3 z-0" />
@@ -68,7 +68,7 @@ const Homepage2 = ({theme}) => {
 
                 <div className={theme == "light"? "grid grid-cols-2 w-1/2 gap-10" : "grid grid-cols-2 w-1/2 gap-10 text-white"}>
                     {/* icon 1 */}
-                    <div className="w-75 shadow shadow-gray-300 p-4">
+                    <div data-aos="fade-right" className="w-75 shadow shadow-gray-300 p-4">
                         <div className="w-15 h-15 bg-[#F2FFF5] rounded-full mb-5 flex justify-center items-center">
                         <img src={Writer} alt="" className="w-10 h-10"/>
                         </div>
@@ -78,7 +78,7 @@ const Homepage2 = ({theme}) => {
 
                     </div>
                      {/* icon 1 */}
-                     <div className="w-75 shadow shadow-gray-300 p-4 translate-y-7">
+                     <div data-aos="fade-left" className="w-75 shadow shadow-gray-300 p-4 translate-y-7">
                         <div className="w-15 h-15 bg-[#F2FFF5] rounded-full mb-5 flex justify-center items-center">
                         <img src={Writer} alt="" className="w-10 h-10"/>
                         </div>
@@ -88,7 +88,7 @@ const Homepage2 = ({theme}) => {
 
                     </div>
                      {/* icon 1 */}
-                     <div className="w-75 shadow shadow-gray-300 p-4">
+                     <div data-aos="fade-up" className="w-75 shadow shadow-gray-300 p-4">
                         <div className="w-15 h-15 bg-[#F2FFF5] rounded-full mb-5 flex justify-center items-center">
                         <img src={Writer} alt="" className="w-10 h-10"/>
                         </div>
@@ -98,7 +98,7 @@ const Homepage2 = ({theme}) => {
 
                     </div>
                      {/* icon 1 */}
-                     <div className="w-75 shadow shadow-gray-300 p-4 translate-y-7">
+                     <div data-aos="fade-up" className="w-75 shadow shadow-gray-300 p-4 translate-y-7">
                         <div className="w-15 h-15 bg-[#F2FFF5] rounded-full mb-5 flex justify-center items-center">
                         <img src={Writer} alt="" className="w-10 h-10"/>
                         </div>
@@ -110,7 +110,7 @@ const Homepage2 = ({theme}) => {
                     
                 </div>
                 {/* real leaf lady */}
-                <div>
+                <div data-aos="fade-left">
                     <img src={Leaflady} alt="" />
                 </div>
                </div>

@@ -8,7 +8,7 @@ import Dotted from "../assets/dotted.svg"
 const Home = ({theme}) => {
     return ( 
         // the Entire home page together
-        <div className={theme == "light"? " flex flex-col items-center pt-3" : " flex flex-col items-center pt-3 pb-5 h-300 bg-[#2d3041]" }>
+        <div className={theme == "light"? " flex flex-col items-center pt-3" : " flex flex-col items-center pt-3 pb-5 h-190 bg-[#2d3041]" }>
             {/* the intro page */}
             <div className="flex flex-col items-center md:items-start md:m-20">
             <h2 className={theme == "light"? "font-bold text-xl md:text-3xl": "font-bold text-white text-xl md:text-3xl"}>Let's find a perfect <span className="text-[#1A84FF]">Opportunity</span> <br /> As bright as you are</h2>
@@ -20,10 +20,10 @@ const Home = ({theme}) => {
 
             </div>
             {/* the search box */}
-            <div className=" hidden md:flex md:relative md:translate-y-2/2 shadow shadow-gray-400 py-1 px-3 items-center mt-10">
+            <div className=" hidden md:flex md:relative md:translate-y-2/2 shadow shadow-gray-400 py-1 px-3 items-center mt-10 animate-pulse">
                 <img src={SearchIcon} alt="" className="w-5 h-5"/>
                 <input type="text" placeholder="Search by Faculty" className={theme == "light"? "border-none outline-none mx-3 text-sm" : "border-none outline-none mx-3  text-white text-sm"} />
-                <button className="py-1 px-3 bg-[#1A84FF] rounded-sm text-white text-sm cursor-pointer">Search</button>
+                <button className="py-1 px-3 bg-[#1A84FF] rounded-sm text-white text-sm cursor-pointer ">Search</button>
             </div>
             {/* school icons */}
             <div className=" hidden relative translate-y-30 md:flex w-60 gap-40 items-center">

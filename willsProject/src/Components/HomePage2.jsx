@@ -9,22 +9,22 @@ import Twitter from "../assets/twitterIcon.png"
 import Mail from "../assets/mailIcon.png"
 import Instagram from "../assets/instagram.png"
 
-const Homepage2 = () => {
+const Homepage2 = ({theme}) => {
     return ( 
     <>
      {/* the second page about opportunities */}
 
-     <div className="mt-30 mx-20 pt-40">
+     <div className={theme == "light"? "mt-30 mx-20 pt-40" : "mt-0 px-20 pt-20 bg-[#161618]" }>
                <div className="flex items-center justify-between gap-100">
                     <p className="text-blue-500 font-bold">Explore popular scholarships </p>
                     <button className="text-white  text-sm font-bold py-1 px-3 bg-[#1A84FF] " >View all</button>
                </div>
                {/* the card */}
-               <div className="flex justify-between">
+               <div className={theme == "light"? "flex justify-between" : "flex justify-between text-white" } >
                 {/* card one */}
                <div className="w-1/4 my-4 shadow shadow-gray-400">
                 <img src={Pic1} alt="" />
-                <h2 className="text-sm font-bold my-3 px-2">Essay writing competition</h2>
+                <h2 className={theme == "light" ? "text-sm font-bold my-3 px-2" : "text-sm text-white font-bold my-3 px-2"} >Essay writing competition</h2>
                 <p className="text-sm font-light p-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste nobis cumque corrupti dicta neque cupiditate consectetur, veniam possimus aperiam expedita optio quo, excepturi iusto eius molestiae deleniti ea culpa at.</p>
                 <p className="text-blue-500 text0-sm font-light my-2 px-2">See more </p>
                </div>
@@ -51,8 +51,8 @@ const Homepage2 = () => {
                 <img src={Dotted} alt="" className="absolute top-0 left-80 w-30 -translate-x-1/3 z-0" />
                 </div>
 
-                <div className=" w-1/2">
-                    <h2 className="text-blue-500 font-bold mb-10 ">Students be talking about us</h2>
+                <div className= {theme == "light"? " w-1/2": " w-1/2 text-white" }>
+                    <h2 className="text-blue-500 font-bold text-2xl mb-10 ">Students be talking about us!</h2>
                     <p className="font-light text-sm mb-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore nisi doloribus commodi, debitis nulla maiores est dicta! Ut sit nemo blanditiis ad ipsam placeat, dicta exercitationem, dolor, nam omnis nobis.</p>
                     <h2 className="font-bold">Kalisa Belyse</h2>
                     <h2 className="text-sm font-light">Student</h2>
@@ -65,7 +65,8 @@ const Homepage2 = () => {
                     </div>            
                {/* the leaf Lady */}
                <div className="my-10 flex justify-between">
-                <div className="grid grid-cols-2 w-1/2 gap-10">
+
+                <div className={theme == "light"? "grid grid-cols-2 w-1/2 gap-10" : "grid grid-cols-2 w-1/2 gap-10 text-white"}>
                     {/* icon 1 */}
                     <div className="w-75 shadow shadow-gray-300 p-4">
                         <div className="w-15 h-15 bg-[#F2FFF5] rounded-full mb-5 flex justify-center items-center">
@@ -115,11 +116,11 @@ const Homepage2 = () => {
                </div>
                {/* the team intro */}
 
-               <div className="my-30">
+               <div className= {theme == "light"? "my-30" : "mt-30 text-white  pb-30"}>
                 <p className="font-bold my-3 text-2xl">MEET <br /><span className="text-blue-500">OUR TEAM</span></p>
                 <div className="flex justify-between">
                     {/* person 1 */}
-                    <div className="flex items-center gap-9 w-90 shadow-2xl shadow-black rounded-full">
+                    <div className={theme == "light" ? "flex items-center gap-9 w-90 shadow-2xl shadow-black rounded-full":"flex items-center gap-9 w-90 shadow-2xl shadow-black bg-gray-400 rounded-full"}>
                         <div className="bg-[#393D3E] w-40">
                             <img src={Profilepic} alt="" />
                         </div>
@@ -144,7 +145,7 @@ const Homepage2 = () => {
 
                     {/* person 2 */}
                     {/* person 1 */}
-                    <div className="flex items-center gap-9 w-90 shadow-2xl shadow-black rounded-full">
+                    <div className={theme == "light" ? "flex items-center gap-9 w-90 shadow-2xl shadow-black rounded-full" : "flex items-center gap-9 w-90 shadow-2xl shadow-black bg-gray-400 rounded-full"}>
                         <div className="bg-[#393D3E] w-40">
                             <img src={Profilepic} alt="" />
                         </div>
@@ -168,7 +169,7 @@ const Homepage2 = () => {
                     </div>
                     {/* person 3 */}
                     {/* person 1 */}
-                    <div className="flex items-center gap-9 w-90 shadow-2xl shadow-black rounded-full">
+                    <div className={theme == "light" ? "flex items-center gap-9 w-90 shadow-2xl shadow-black rounded-full" : "flex items-center gap-9 w-90 shadow-2xl shadow-black bg-gray-400 rounded-full"}>
                         <div className="bg-[#393D3E] w-40">
                             <img src={Profilepic} alt="" />
                         </div>

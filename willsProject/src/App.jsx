@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react"
+import { Routes, Route } from "react-router-dom"
 import AOS from 'aos'
 import NavBar from "./Components/Navbar"
 import Home from "./Components/LandingPage"
-import Homepage2 from "./Components/HomePage2"
+import Signup from "./Components/Signup"
 import Footer from "./Components/Footer"
 import "aos/dist/aos.css"
 
@@ -14,12 +15,18 @@ function App() {
     })
   }, [])
   return (
-    <>
-     <NavBar theme ={theme} setTheme={setTheme}/>
-     <Home theme={theme}/>
-     <Homepage2 theme={theme}/>
-     <Footer theme={theme}/>
-    </>
+    <div>
+      <NavBar theme ={theme} setTheme={setTheme}/>
+      <Routes>
+      <Route path="/" element={<Home theme={theme}/>} />
+      <Route path="/Signup" element={<Signup theme={theme}/>} />
+      {/* <Route path="/Navbar" element={<NavBar theme ={theme} setTheme={setTheme}/>} /> */}
+       {/* <Homepage2 theme={theme}/> */}
+     {/* <Footer theme={theme}/> */}
+    </Routes>
+    <Footer theme={theme}/>
+    </div>
+  
   )
 }
 

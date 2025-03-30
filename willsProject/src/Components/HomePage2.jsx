@@ -20,7 +20,7 @@ const Homepage2 = ({theme}) => {
                     <button className="text-white mb-3 text-sm font-bold py-1 px-3 bg-[#1A84FF] " >View all</button>
                </div>
                {/* all cards */}
-               <div className={theme == "light"? "flex sm:flex-col items-center gap-8 md:flex-row md:justify-between" : "flex justify-between text-white" } >
+               <div className={theme == "light"? "flex flex-col items-center gap-8 md:flex-row md:justify-between" : "flex justify-between text-white" } >
                 {/* card one */}
                <div data-aos="fade-right" className=" w-3/4 md:w-1/4 my-4 shadow shadow-gray-400">
                 <img src={Pic1} alt="" />

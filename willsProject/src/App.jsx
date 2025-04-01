@@ -6,6 +6,9 @@ import Home from "./Components/LandingPage"
 import Signup from "./Components/Signup"
 import Footer from "./Components/Footer"
 import "aos/dist/aos.css"
+import Signup_appr from "./Components/Signup_appr"
+import Signup_conf from "./Components/Signup_conf"
+
 
 function App() {
   const [theme, setTheme]= useState("light")
@@ -20,6 +23,9 @@ function App() {
       <Routes>
       <Route path="/" element={<Home theme={theme}/>} />
       <Route path="/Signup" element={<Signup theme={theme}/>} />
+      <Route path="/Signup_appr" element={<Signup_appr theme={theme}/>} />
+      <Route path="/Signup_conf" element={<Signup_conf theme={theme}/>} />
+
       {/* <Route path="/Navbar" element={<NavBar theme ={theme} setTheme={setTheme}/>} /> */}
        {/* <Homepage2 theme={theme}/> */}
      {/* <Footer theme={theme}/> */}

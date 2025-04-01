@@ -67,8 +67,12 @@ const Signup = ({theme}) => {
                     <div className="bg-[#D5E4DD80] flex flex-col items-center justify-center w-100 h-50 mb-6">
                         <img src={UploadCloud} alt="" className="w-15 h-15" />
                         <p className="text-gray-400">Drag and Drop to upload</p>
-                        <button className="p-1 bg-blue-500 text-[14px] my-3 text-white ">Select Files</button>
+                        <button className="p-1 bg-blue-500 text-[14px]  px-2 my-3 text-white hover:bg-black ">Select Files</button>
 
+                    </div>
+                    <div className="flex flex-col items-center">
+                    <h1 className="font-light text-gray-400 -translate-x-39 text-sm mb-2">Profile Picture</h1>
+                    <input type="text" name="" id="" placeholder="Please enter your password" className="p-2 bg-[#D5E4DD80] mb-9 text-sm outline-blue-500 w-100"  />
                     </div>
                     
                 

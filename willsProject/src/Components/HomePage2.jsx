@@ -8,6 +8,7 @@ import Profilepic from "../assets/profilepic.png"
 import Twitter from "../assets/twitterIcon.png"
 import Mail from "../assets/mailIcon.png"
 import Instagram from "../assets/instagram.png"
+import { Link } from "react-router-dom"
 
 const Homepage2 = ({theme}) => {
     return ( 
@@ -17,7 +18,11 @@ const Homepage2 = ({theme}) => {
      <div className={theme == "light"? "mt-30 mx-20 pt-40" : "mt-0 px-20 pt-20 bg-[#161618]" }>
                <div className=" flex gap-7 flex-col md:flex items-center md:justify-between ">
                     <p className="text-blue-500 font-bold">Explore popular scholarships </p>
+                    <Link to="/Opportunities">
                     <button className="text-white mb-3 text-sm font-bold py-1 px-3 bg-[#1A84FF] " >View all</button>
+                    </Link>
+                    
+
                </div>
                {/* all cards */}
                <div className={theme == "light"? "flex flex-col items-center gap-8 md:flex-row md:justify-between" : "flex justify-between text-white" } >

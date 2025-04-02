@@ -8,6 +8,8 @@ import Footer from "./Components/Footer"
 import "aos/dist/aos.css"
 import Signup_appr from "./Components/Signup_appr"
 import Signup_conf from "./Components/Signup_conf"
+import Opportunities from "./Components/Opportunities_details"
+import OpportunitiesAll from "./Components/Opportunities_all"
 
 
 function App() {
@@ -25,6 +27,9 @@ function App() {
       <Route path="/Signup" element={<Signup theme={theme}/>} />
       <Route path="/Signup_appr" element={<Signup_appr theme={theme}/>} />
       <Route path="/Signup_conf" element={<Signup_conf theme={theme}/>} />
+      <Route path="/Opportunities" element={<Opportunities theme={theme}/>} />
+      <Route path="/OpportunitiesAll" element={<OpportunitiesAll theme={theme}/>} />
+      
 
       {/* <Route path="/Navbar" element={<NavBar theme ={theme} setTheme={setTheme}/>} /> */}
        {/* <Homepage2 theme={theme}/> */}

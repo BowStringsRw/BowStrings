@@ -30,7 +30,7 @@ const NavBar = ({theme, setTheme}) => {
                         <Link to="/">
                         <li className="hover:border-b hover:border-[#1A84FF]">Home</li>
                         </Link>
-                        
+                        <Link to="/OpportunitiesAll">
                         <li onMouseEnter={()=>setUnwrap(true)} onMouseLeave={()=>setUnwrap(false)} className="relative hover:border-b hover:border-[#1A84FF]">Opportunities
                             {unwrap && <div className=" absolute bg-[#8cc2ff] py-3 px-2 top-6 z-10">
                                 <ul className="font-light text-sm ">
@@ -40,6 +40,8 @@ const NavBar = ({theme, setTheme}) => {
                                 </ul>
                             </div> }
                         </li>
+                        </Link>
+
                         <li className="hover:border-b border-[#1A84FF]">Let Them Talk</li>
                         <li className="hover:border-b border-[#1A84FF]">About</li>
                     </ul>

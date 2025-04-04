@@ -4,3 +4,8 @@
     transition: 0.2s;
     overflow-x: hidden;
 }
+@media (width >= 48rem /* 768px */) {
+   *{
+    overflow: visible;
+   }
+}

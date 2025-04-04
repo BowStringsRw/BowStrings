@@ -18,7 +18,7 @@ const Signup = ({theme}) => {
                     
                     </div>
                     {/* line1 */}
-                    <div className="absolute bg-white w-[1px] h-22 top-8 left-3"></div>
+                    <div className="absolute bg-white w-[1px]  h-22 top-8 left-3"></div>
                 </div>
                  {/* bullet2 */}
                 <div className="relative flex  items-center gap-6 my-15">
@@ -58,12 +58,12 @@ const Signup = ({theme}) => {
             <div className="flex flex-col items-center md:-translate-y-20 md:w-1/2">
                 <h1 className="font-bold mt-5 md:mt-6">BowStrings</h1>
                 {/* the form */}
-                <div>
+                <div className="w-[90%] md:flex flex-col items-center">
                     <h1 className={theme == "light" ? "font-bold text-gray-600 my-7 text-sm md:text-md": "font-bold text-gray-300 my-7 text-sm md:text-md"}>Organization details</h1>
                     {/* name */}
                     <div>
                     <p className={theme == "light"?"text-gray-500 text-sm" : "text-gray-300 text-sm" }>Name</p>
-                    <input type="text" name="" id="" placeholder="Enter your Name" className={theme =="light"? "text-sm my-4 w-90 p-3 outline-blue-500  bg-[#D5E4DD80]": "text-sm my-4 w-90 p-3 outline-blue-500  bg-[#D5E4DD80]"}/>
+                    <input type="text" name="" id="" placeholder="Enter your Name" className={theme =="light"? "text-sm w-90 my-4 p-3 outline-blue-500  bg-[#D5E4DD80]": "text-sm my-4 w-90 p-3 outline-blue-500  bg-[#D5E4DD80]"}/>
                     </div>
                     {/* Email*/}
                     <div>

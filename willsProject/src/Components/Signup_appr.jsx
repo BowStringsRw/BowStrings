@@ -59,9 +59,9 @@ const Signup = ({theme}) => {
             <div className="flex flex-col items-center md:-translate-y-20 md:w-1/2">
                 <h1 className="font-bold mt-5 md:mt-6">BowStrings</h1>
                 {/* the form */}
-                <div className="flex flex-col items-center">
+                <div className="flex flex-col items-center ">
                     <h1 className={theme == "light" ? "font-bold text-gray-600 my-6 text-sm md:text-md": "font-bold text-gray-300 my-6 text-sm md:text-md"}>Organization approval</h1>
-                    <h1 className="font-light text-sm mb-4">Using any one of the options below, get your account verified <br /> and start posting internships/jobs</h1>
+                    <h1 className="font-light text-sm mb-4 mx-[3%] md:mx-0">Using any one of the options below, get your account verified <br /> and start posting internships/jobs</h1>
                     
                     {/* radio btn 1*/}
                     <div className="flex">

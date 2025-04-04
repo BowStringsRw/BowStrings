@@ -16,7 +16,7 @@ const NavBar = ({theme, setTheme}) => {
     return ( 
         <>
             {/* the entire nav */}
-            <div className={theme == "light"? "flex justify-around py-3  items-center shadow-2xl shadow-gray-300 ": "bg-[#0d131e] flex justify-around py-3 items-center" }>
+            <div className={theme == "light"? "navbar flex justify-around py-3  sm:overflow-visible items-center shadow-2xl shadow-gray-300 ": "bg-[#0d131e] flex justify-around py-3 items-center" }>
                 {/* The logo */}
                 <div className="flex items-center gap-1.5 cursor-pointer">
                     <div className=" relative w-7 h-7 bg-[#1A84FF] rounded-full flex items-center " >
@@ -47,28 +47,28 @@ const NavBar = ({theme, setTheme}) => {
                     </ul>
                 </div>
                 {/* humburger */}
-                <div  onClick={openHumburger} className=" relative block cursor-pointer md:hidden">
+                <div  onClick={openHumburger} className=" relative block cursor-pointer md:hidden transition-[1s]">
                     <div className={hamopen == "open"? "bg-[#1A84FF] w-9 h-1 my-1 rotate-45 translate-y-2" : "bg-[#1A84FF] w-9 h-1 my-1"} ></div>
                     <div className={hamopen == "open"? "bg-[#1A84FF] w-9 h-1 my-1 rotate-45" : "bg-[#1A84FF] w-7 h-1 my-1"}></div>
                     <div className={hamopen == "open"? "bg-[#1A84FF] w-9 h-1 my-1 -rotate-45 -translate-y-2" : "bg-[#1A84FF] w-9 h-1 my-1"}></div>
                 </div>
-                {hamopen == "open" && <div className={theme == "light"? "absolute top-16 p-4 left-2  bg-[#8cc2ff] md:hidden": "absolute top-16 p-4 left-2  bg-[#404243] md:hidden"}> 
+                {hamopen == "open" && <div data-aos="fade-right" className={theme == "light"? "absolute h-[100vh] w-[80%] z-20 top-16 p-4 left-0  bg-blue-500 md:hidden": "absolute z-20 h-[100vh] w-[70%] top-15 p-4 left-0  bg-[#404243] md:hidden"}> 
                     <div className=" " >
-                    <ul className={theme== "light" ? "cursor-pointer  font-semi-bold " : "gap-10 cursor-pointer font-semi-bold text-gray-300" }>
+                    <ul className={theme== "light" ? "cursor-pointer  font-bold text-white " : "gap-10 cursor-pointer font-semi-bold text-gray-300" }>
                         <Link to="/">
-                        <li className="hover:border-b hover:border-[#1A84FF] text-sm">Home</li>
+                        <li className="hover:border-b hover:border-[#1A84FF] text-[18px]">Home</li>
                         </Link>
-                        <li onMouseEnter={()=>setUnwrap(true)} onMouseLeave={()=>setUnwrap(false)} className="relative hover:border-b hover:border-[#1A84FF] my-2 text-sm">Opportunities
-                            {unwrap && <div className={theme == "light"?" absolute bg-[#8cc2ff] left-25 py-3 pr-2 pl-3 top-1" : "absolute bg-[#8c9197] left-25 py-3 pr-2 pl-3 top-1" }>
+                        <li className="relative hover:border-b hover:border-[#1A84FF] my-2 text-[18px]"> <Link to="/OpportunitiesAll">Opportunities</Link>
+                            <div className={theme == "light"?" z-30 left-0 py-3 pr-2 pl-3 top-6" : " left-0 py-3 pr-2 pl-3 top-6" }>
                                 <ul className="font-light text-sm ">
                                     <li>Scholarships</li>
                                     <li className="py-3">Interships</li>
                                     <li>Jobs</li>
                                 </ul>
-                            </div> }
+                            </div> 
                         </li>
-                        <li className="hover:border-b border-[#1A84FF] my-2 text-sm">Let Them Talk</li>
-                        <li className="hover:border-b border-[#1A84FF] text-sm">About</li>
+                        <li className="hover:border-b border-[#1A84FF] my-2 text-[18px]">Let Them Talk</li>
+                        <li className="hover:border-b border-[#1A84FF] text-[18px]">About</li>
                     </ul>
                 </div>
                     </div> }

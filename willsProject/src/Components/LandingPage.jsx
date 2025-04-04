@@ -37,7 +37,7 @@ const Home = ({theme}) => {
             
             </div>
 
-            <div className="absolute flex top-40 items-center  left-10 md:left-210 md:top-84">
+            <div className="absolute flex top-40 items-center z-0  left-10 md:left-210 md:top-84">
                 <div><ShieldCheck className=" w-4 md:w-6 md:h-6 top-[23px] left-[46px] text-blue-500" /></div>
                 <p className={theme == "light"? "text-black text-[10px] md:text-[15px]": "text-white text-[10px] md:text-[15px]"}>Congratulations</p>
             </div>

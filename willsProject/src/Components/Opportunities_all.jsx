@@ -9,7 +9,7 @@ const OpportunitiesAll = ({theme}) => {
             <div className="flex flex-col mx-8 md:mx-27 md:h-[100vh] md:w-1/4  md:shadow-[1px_0_0px_rgba(0,0,0,0.2)]
 ">
                 <h1 className="font-bold text-sm mt-7 mb-4">Keyword Search</h1>
-                <div className="flex mb-4 w-60 justify-between shadow shadow-gray-400 p-1">
+                <div className="flex mb-4 mx-3 md:mx-0 w-60 justify-between shadow shadow-gray-400 p-1">
                 <input type="text" name="" id="" placeholder="Search opportunites" className="border-nono text-sm outline-none"/>
                     <div className="">
                     <img src={SearchIcon} alt="" className="w-6 h-6" />

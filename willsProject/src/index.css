@@ -3,6 +3,7 @@
 *{
     transition: 0.2s;
     overflow-x: hidden;
+    font-family: futura;
 }
 @media (width >= 48rem /* 768px */) {
    *{
